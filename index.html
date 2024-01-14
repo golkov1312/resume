@@ -5,70 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="dmitiy, cv, resume,">
     <meta name="description" content="Это сайт - резюме Голкова Дмитрия">
-    <title>Dmitriy CV</title>
+    <title>Dmitriy CV</title>  
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="photo/DSC_5448.jpg" width="250" alt="Дима Голков">
-    <h1>Голков Дмитрий</h1>
-    <p>На данный момент я <em>работаю самозанятым</em>, увлекаюсь спортои, люблю пить кофе с друзьями</p>
-    <p>Пытаюсь изучить курс <strong>Frontend Developer</strong> и монетизировать свои знания</p>
-    <h2><strong>Список социальных сетей:</strong></h2>
-    <a href="https://vk.com/alki_david" target="_blank">Vk</a>
-    <a href="https:/https://www.instagram.com/d.golkov/" target="_blank">Instagram</a>
-    <a href="https://telegram.org/alki_david" target="_blank">Telegram</a>
-    <h2><strong>Мои хобби</strong></h2>
-    <ol>
-        <li>Тренажерный зал</li>
-        <li>Товарищеские посиделки</li>
-        <li>Ночные клубы</li>
-        <li>Путешествия в другие города</li>
-    </ol>
-    <table>
-    <h2><strong>Опыт работы</strong></h2>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ИП Саркисян</td>
-                <td>Менеджер по продажам</td>
-                <td>2015-2017</td>
-            </tr>
-            <tr>
-                <td>ООО"ЮТК"</td>
-                <td>Генеральный директор</td>
-                <td>2020-2022</td>
-            </tr>
-            <tr>
-                <td>Самозанятый</td>
-                <td>Консультант по госторгам</td>
-                <td>2022-2024</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
-        <form>
-            <div>
-                <label for="text">Ваше имя:</label>
-                <input type="text" id="text" placeholder="Введите имя">
-            </div>
+    <div class="container">
+        <div class="info">
+            <img src="DSC_5448.jpg" alt="Дима Голков" class="avatar">
+            <div class="info-text">
+                <h1>Голков Дмитрий</h1>
+                <p> Сейчас я работаю самозанятым, увлекаюсь спортои, люблю пить кофе друзьями.</p>
+                <p>Пытаюсь изучить курс <strong>Frontend Developer</strong> и монетизировать свои знания.</p>
+                <h2><strong>Список социальных сетей:</strong></h2>
+                <a href="https://vk.com/alki_david" target="_blank">Vk</a>
+                <a href="https:/https://www.instagram.com/d.golkov/" target="_blank">Instagram</a>
+                <a href="https://telegram.org/alki_david" target="_blank">Telegram</a>
+            </div>    
+        </div>
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Тренажерный зал</li>
+                <li>Товарищеские посиделки</li>
+                <li>Ночные клубы</li>
+                <li>Путешествия в другие города</li>
+            </ol>
+        </div>
+        <div class="card bg-yellow">
+            <h2>Опыт работы</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ИП Саркисян</td>
+                            <td>Менеджер по продажам</td>
+                            <td>2015-2017</td>
+                        </tr>
+                        <tr>
+                            <td>ООО "ЮТК"</td>
+                            <td>Генеральный директор</td>
+                            <td>2020-2022</td>
+                        </tr>
+                        <tr>
+                            <td>Самозанятый</td>
+                            <td>Консультант по госторгам</td>
+                            <td>2022-2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div class="card bg-blue">
+            <form class="form">
+                <h2>Связаться со мной</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="text">Ваше имя:</label>
+                        <input type="text" id="text" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ваше ссобщение:</label>
+                        <textarea id="message" placeholder="Введите сообщение..." cols="20" rows="1"></textarea>
+                    </div>
+                </div>
 
-            <div>
-                <label for="email">Ваш email:</label>
-                <input type="email" id="email" placeholder="Введите email">
-            </div>
-
-            <div>
-                <label for="message">Ваше ссобщение:</label>
-                <br>
-                <textarea id="message" placeholder="Введите сообщение..." cols="22" rows="5"></textarea>
-            </div>
-
-            <button type="submit">Отправить!</button>
-        </form>
+                <button type="submit" class="btn">Отправить!</button>
+            </form>
+        </div>  
+    </div> 
 </body>
 </html>
